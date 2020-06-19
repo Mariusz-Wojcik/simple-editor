@@ -1,13 +1,101 @@
 @import "~normalize.css";
-
 @import "_variables";
 @import "modules/hello.scss";
 
 body {
-  background: $wtf;
-  color: #fff;
-  display: flex;
   align-items: center;
+  display: flex;
   justify-content: center;
-  min-height: 100vh;
+  height: 100vh;
+  margin: 0;
+}
+
+.menu {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  padding: 0;
+  outline: none;
+}
+
+@keyframes dash {
+   from {
+      stroke-dasharray: 110000;
+      stroke-dashoffset: 20000;
+      fill: black;
+  }
+  to {
+      stroke-dasharray: 10000;
+      stroke-dashoffset: 0;
+      fill:white;
+  }
+}
+
+@keyframes dash-1 {
+  from {
+    stroke-dashoffset: 12000;
+  }
+  to {
+    stroke-dashoffset: 0;
+    fill:black;
+  }
+}
+
+@keyframes dash-2 {
+  from {
+    stroke-dashoffset: 24000;
+  }
+  to {
+    stroke-dashoffset: 0;
+    fill:black;
+  }
+}
+
+@keyframes dash-3 {
+  from {
+    stroke-dashoffset: 104000;
+  }
+  to {
+    stroke-dashoffset: 0;
+    fill:black;
+  }
+}
+
+@keyframes scale {
+  0% {
+    transform: scale(1);
+}
+50% {
+  transform: scale(1.1);
+}
+100% {
+  transform: scale(0.0);
+}
+}
+
+.opened .circle-inside{
+  fill:white;
+  stroke-dasharray: 12000;
+  animation: dash-1 2s linear forwards;
+  animation-delay: 1s;
+}
+
+.opened .circle-outside{
+  fill:white;
+  stroke-dasharray: 24000;
+  animation: dash-2 2s linear forwards;
+  animation-delay: 1s;
+}
+
+.opened .path{
+  fill:white;
+  stroke-dasharray: 104000;
+  animation: dash-3 3s linear forwards;
+}
+
+
+.opened svg{
+  animation: scale 1s linear forwards;
+  animation-delay: 3s;
 }
