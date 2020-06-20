@@ -7,16 +7,21 @@ body {
   display: flex;
   justify-content: center;
   height: 100vh;
+  width: 100vw;
   margin: 0;
+  background-image: url('../assets/img/pip-boy_screen.jpg') ;
+  background-size: 100% 100%;
 }
 
-.menu {
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
-  display: flex;
-  padding: 0;
-  outline: none;
+
+svg {
+  background-color: white;
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 @keyframes dash {
@@ -64,13 +69,26 @@ body {
 
 @keyframes scale {
   0% {
+    position: fixed;
+  top: 0%;
+  left: 0%;
+    transform: translate(-50%, -50%);
     transform: scale(1);
+    
 }
 50% {
-  transform: scale(1.1);
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  transform: translate(-50%, -50%);
+  transform: scale(1.02);
 }
 100% {
-  transform: scale(0.0);
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  transform: translate(-50%, -50%);
+  transform: scale(0);
 }
 }
 
@@ -94,8 +112,7 @@ body {
   animation: dash-3 3s linear forwards;
 }
 
-
-.opened svg{
+.opened {
   animation: scale 1s linear forwards;
   animation-delay: 3s;
 }
