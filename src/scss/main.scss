@@ -2,6 +2,79 @@
 @import "_variables";
 @import "modules/hello.scss";
 
+@keyframes dash {
+  from {
+     stroke-dasharray: 110000;
+     stroke-dashoffset: 20000;
+     fill: black;
+ }
+ to {
+     stroke-dasharray: 10000;
+     stroke-dashoffset: 0;
+     fill:white;
+ }
+}
+
+@keyframes dash-1 {
+ from {
+   stroke-dashoffset: 12000;
+ }
+ to {
+   stroke-dashoffset: 0;
+   fill:black;
+ }
+}
+
+@keyframes dash-2 {
+ from {
+   stroke-dashoffset: 24000;
+ }
+ to {
+   stroke-dashoffset: 0;
+   fill:black;
+ }
+}
+
+@keyframes dash-3 {
+ from {
+   stroke-dashoffset: 104000;
+ }
+ to {
+   stroke-dashoffset: 0;
+   fill:black;
+ }
+}
+
+@keyframes scale {
+ 0% {
+   position: fixed;
+ top: 0%;
+ left: 0%;
+   transform: translate(-50%, -50%);
+   transform: scale(1);  
+}
+1% {
+ position: fixed;
+ top: 0%;
+ left: 0%;
+ transform: translate(-50%, -50%);
+ transform: scale(1.05);
+}
+30% {
+ position: fixed;
+ top: 0%;
+ left: 0%;
+ transform: translate(-50%, -50%);
+ transform: scale(1.02);
+}
+100% {
+ position: fixed;
+ top: 0%;
+ left: 0%;
+ transform: translate(-50%, -50%);
+ transform: scale(0);
+}
+}
 body {
   align-items: center;
   display: flex;
@@ -13,8 +86,32 @@ body {
   background-size: 100% 100%;
 }
 
+.opened {
+  animation: scale 1s linear forwards;
+  animation-delay: 3s;
+}
 
-svg {
+.opened .svg__circle-inside{
+  fill:white;
+  stroke-dasharray: 12000;
+  animation: dash-1 2s linear forwards;
+  animation-delay: 1s;
+}
+
+.opened .svg__circle-outside{
+  fill:white;
+  stroke-dasharray: 24000;
+  animation: dash-2 2s linear forwards;
+  animation-delay: 1s;
+}
+
+.opened .svg__path{
+  fill:white;
+  stroke-dasharray: 104000;
+  animation: dash-3 3s linear forwards;
+}
+
+.svg {
   background-color: white;
   height: 100vh;
   width: 100vw;
@@ -22,97 +119,4 @@ svg {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-}
-
-@keyframes dash {
-   from {
-      stroke-dasharray: 110000;
-      stroke-dashoffset: 20000;
-      fill: black;
-  }
-  to {
-      stroke-dasharray: 10000;
-      stroke-dashoffset: 0;
-      fill:white;
-  }
-}
-
-@keyframes dash-1 {
-  from {
-    stroke-dashoffset: 12000;
-  }
-  to {
-    stroke-dashoffset: 0;
-    fill:black;
-  }
-}
-
-@keyframes dash-2 {
-  from {
-    stroke-dashoffset: 24000;
-  }
-  to {
-    stroke-dashoffset: 0;
-    fill:black;
-  }
-}
-
-@keyframes dash-3 {
-  from {
-    stroke-dashoffset: 104000;
-  }
-  to {
-    stroke-dashoffset: 0;
-    fill:black;
-  }
-}
-
-@keyframes scale {
-  0% {
-    position: fixed;
-  top: 0%;
-  left: 0%;
-    transform: translate(-50%, -50%);
-    transform: scale(1);
-    
-}
-50% {
-  position: fixed;
-  top: 0%;
-  left: 0%;
-  transform: translate(-50%, -50%);
-  transform: scale(1.02);
-}
-100% {
-  position: fixed;
-  top: 0%;
-  left: 0%;
-  transform: translate(-50%, -50%);
-  transform: scale(0);
-}
-}
-
-.opened .circle-inside{
-  fill:white;
-  stroke-dasharray: 12000;
-  animation: dash-1 2s linear forwards;
-  animation-delay: 1s;
-}
-
-.opened .circle-outside{
-  fill:white;
-  stroke-dasharray: 24000;
-  animation: dash-2 2s linear forwards;
-  animation-delay: 1s;
-}
-
-.opened .path{
-  fill:white;
-  stroke-dasharray: 104000;
-  animation: dash-3 3s linear forwards;
-}
-
-.opened {
-  animation: scale 1s linear forwards;
-  animation-delay: 3s;
 }
