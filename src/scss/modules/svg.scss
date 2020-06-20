@@ -49,19 +49,26 @@
 		transform: translate(-50%, -50%);
 		transform: scale(1);
 	}
-	1% {
+	10% {
 		position: fixed;
 		top: 0%;
 		left: 0%;
 		transform: translate(-50%, -50%);
 		transform: scale(1.05);
 	}
-	30% {
+	40% {
 		position: fixed;
 		top: 0%;
 		left: 0%;
 		transform: translate(-50%, -50%);
-		transform: scale(1.02);
+		transform: scale(1.04);
+	}
+	50% {
+		position: fixed;
+		top: 0%;
+		left: 0%;
+		transform: translate(-50%, -50%);
+		transform: scale(1.03);
 	}
 	100% {
 		position: fixed;
