@@ -3,12 +3,8 @@
 @import "modules/svg.scss";
 
 body {
-	align-items: center;
-	display: flex;
-	justify-content: center;
 	height: 100vh;
 	width: 100vw;
-	margin: 0;
 	background-image: url("../assets/img/pip-boy_screen.jpg");
 	background-size: 100% 100%;
 }
