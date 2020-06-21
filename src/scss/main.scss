@@ -16,6 +16,8 @@ body {
 	justify-items: center;
 	align-items: center;
 	color: #69cc79;
+	line-height: 0.2px;
+	padding-top: 50px;
 	&__title {
 		text-align: center;
 		font-size:36px;
@@ -38,11 +40,14 @@ body {
 .form{
 	display: flex;
     align-items: center;
-	justify-content: center;
+	justify-content: flex-start;
+	margin:10px;
 	&__notepad{
 		display: block;
 		font-family: "Roboto Mono", monospace;
 		color: #69cc79;
 		background: transparent;
+		margin-top: 10px;
+		/*border: none;*/
 	}
 }
