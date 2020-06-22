@@ -20,11 +20,11 @@ body {
 	padding-top: 50px;
 	&__title {
 		text-align: center;
-		font-size:36px;
+		font-size: 36px;
 	}
 	&__paragraph-1 {
 		text-align: center;
-		font-size:36px;
+		font-size: 36px;
 	}
 }
 .content {
@@ -37,17 +37,19 @@ body {
 	}
 }
 
-.form{
+.form {
 	display: flex;
-    align-items: center;
+	align-items: center;
 	justify-content: flex-start;
-	margin:10px;
-	&__notepad{
+	margin: 10px;
+	&__notepad {
+		width: 65vw;
+		height: 70vh;
 		display: block;
 		font-family: "Roboto Mono", monospace;
 		color: #69cc79;
 		background: transparent;
 		margin-top: 10px;
-		/*border: none;*/
+		border: none;
 	}
 }
