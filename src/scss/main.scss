@@ -11,22 +11,6 @@ body {
 	font-family: "Roboto Mono", monospace;
 }
 
-.header {
-	display: block;
-	justify-items: center;
-	align-items: center;
-	color: #69cc79;
-	line-height: 0.2px;
-	padding-top: 50px;
-	&__title {
-		text-align: center;
-		font-size: 36px;
-	}
-	&__paragraph {
-		text-align: center;
-		font-size: 36px;
-	}
-}
 .content {
 	display: block;
 	justify-items: center;
@@ -51,5 +35,22 @@ body {
 		background: transparent;
 		margin-top: 10px;
 		border: none;
+	}
+}
+
+.header {
+	display: block;
+	justify-items: center;
+	align-items: center;
+	color: #69cc79;
+	line-height: 0.2px;
+	padding-top: 50px;
+	&__title {
+		text-align: center;
+		font-size: 36px;
+	}
+	&__paragraph {
+		text-align: center;
+		font-size: 36px;
 	}
 }
