@@ -7,6 +7,7 @@ body {
 	height: 100vh;
 	width: 100vw;
 	background-image: url("../assets/img/pip-boy_screen_small.jpg");
+	background-repeat: no-repeat;
 	background-size: 100% 100%;
 	font-family: "Roboto Mono", monospace;
 }
@@ -28,7 +29,9 @@ body {
 	margin: 10px;
 	&__notepad {
 		width: 65vw;
-		height: 70vh;
+		height: 60vh;
+		max-height: 60vh;
+		max-width: 65vw;
 		display: block;
 		font-family: "Roboto Mono", monospace;
 		color: #69cc79;
