@@ -1,5 +1,4 @@
 import '../scss/main.scss';
-
 // uncomment the lines below to enable PWA
 // import {registerSW} from './pwa.js';
 // registerSW();
@@ -15,6 +14,9 @@ let result='';
 
 if(entry){
 result=entry;
+document.documentElement.style.setProperty('--time1s', '0.01s');
+document.documentElement.style.setProperty('--time2s', '0.01s');
+document.documentElement.style.setProperty('--time3s', '0.01s');
 }
 
 button_save.addEventListener('click', ()=>{
@@ -22,6 +24,5 @@ button_save.addEventListener('click', ()=>{
 })
 
 button_load.addEventListener('click', ()=>{
-    textarea.value=localStorage.getItem('entry');   
-
+    textarea.value=localStorage.getItem('entry');
 })

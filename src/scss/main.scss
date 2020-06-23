@@ -16,7 +16,7 @@ body {
 	display: block;
 	justify-items: center;
 	align-items: center;
-	color: #69cc79;
+	color: $editor;
 	&__title {
 		text-align: center;
 	}
@@ -34,7 +34,7 @@ body {
 		max-width: 65vw;
 		display: block;
 		font-family: "Roboto Mono", monospace;
-		color: #69cc79;
+		color: $editor;
 		background: transparent;
 		margin-top: 10px;
 		border: none;
@@ -45,7 +45,7 @@ body {
 	display: block;
 	justify-items: center;
 	align-items: center;
-	color: #69cc79;
+	color: $editor;
 	line-height: 0.2px;
 	padding-top: 50px;
 	&__title {
@@ -64,20 +64,20 @@ body {
 	padding: 16px;
 	&__load{
 		font-family: "Roboto Mono", monospace;
-		color: #69cc79;
+		color: $editor;
 		margin: 16px;
 		background-color: transparent;
 		font-weight: bold;
 		border-width: 5px;
-		border-color: #69cc79;
+		border-color: $editor;
 	}
 	&__save{
 		font-family: "Roboto Mono", monospace;
-		color: #69cc79;
+		color: $editor;
 		margin: 16px;
 		background-color: transparent;
 		font-weight: bold;
 		border-width: 5px;
-		border-color: #69cc79;
+		border-color: $editor;
 	}
 }

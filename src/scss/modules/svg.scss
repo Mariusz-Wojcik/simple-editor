@@ -1,3 +1,9 @@
+:root{
+	--time1s: 1s;
+	--time2s: 2s;
+	--time3s: 3s;
+}
+
 @keyframes dash {
 	from {
 		stroke-dasharray: 110000;
@@ -80,28 +86,28 @@
 }
 
 .opened {
-	animation: scale 1s linear forwards;
-	animation-delay: 3s;
+	animation: scale var(--time1s) linear forwards;
+	animation-delay: var(--time3s);
 }
 
 .opened .svg__circle-inside {
 	fill: white;
 	stroke-dasharray: 12000;
-	animation: dash-1 2s linear forwards;
-	animation-delay: 1s;
+	animation: dash-1 var(--time2s) linear forwards;
+	animation-delay: var(--time1s);
 }
 
 .opened .svg__circle-outside {
 	fill: white;
 	stroke-dasharray: 24000;
-	animation: dash-2 2s linear forwards;
-	animation-delay: 1s;
+	animation: dash-2 var(--time2s) linear forwards;
+	animation-delay: var(--time1s);
 }
 
 .opened .svg__path {
 	fill: white;
 	stroke-dasharray: 104000;
-	animation: dash-3 3s linear forwards;
+	animation: dash-3 var(--time3s) linear forwards;
 }
 
 .svg {
