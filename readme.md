@@ -1,4 +1,4 @@
-![cover](https://github.com/Mariusz-Wojcik/simple-editor/blob/master/src/assets/img/editor_meta.pngga)
+![cover](https://github.com/Mariusz-Wojcik/simple-editor/blob/master/src/assets/img/editor_meta.png)
 
 # Pip-boy simple editor 
 
