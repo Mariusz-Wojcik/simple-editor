@@ -9,5 +9,8 @@ Simple editor with Fallout Pip-boy theme for local storage usage.
 Button `save` will store data from notepad to local storage.
 Button `load` will get data from local storage and move it to notepad.
 
+### Go Live?
+https://mariusz-wojcik.github.io/simple-editor/
+
 
 
