@@ -1,18 +1,13 @@
-![cover](https://github.com/Mariusz-Wojcik/simple-editor/blob/master/src/assets/img/editor_meta.png)
+![cover](https://github.com/Mariusz-Wojcik/simple-editor/blob/master/src/assets/img/editor_meta.pngga)
 
-# WTF Webpack Starter Kit 
+# Pip-boy simple editor 
 
-Simple toolkit for your static websites development.
+Simple editor with Fallout Pip-boy theme for local storage usage.
 
 ## How to use it?
 
-Click on `Use this template` button to generate a new repository based on this starter kit. After that clone it to your computer, go to the project directory in console and type `npm install`.
+Button `save` will store data from notepad to local storage.
+Button `load` will get data from local storage and move it to notepad.
 
-## Available scripts
 
-`npm run start` - runs development mode
-
-`npm run build` - runs build process for production
-
-`npm run publish` - runs build process and publish the page using `gh-pages` branch
 
