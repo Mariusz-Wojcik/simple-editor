@@ -6,10 +6,23 @@
 body {
 	height: 100vh;
 	width: 100vw;
-	background-image: url("../assets/img/pip-boy_screen_small.jpg");
-	background-repeat: no-repeat;
+	min-width: 300px;
+	background-image: url("../assets/img/pip-boy_screen_small_1024l.jpg");
+	background-repeat: repeat-y;
 	background-size: 100% 100%;
 	font-family: "Roboto Mono", monospace;
+}
+@media screen and (min-width: 600px) {
+	body {
+		background-image: url("../assets/img/pip-boy_screen_small_2048.jpg");
+		background-repeat: no-repeat;
+	}
+}
+@media screen and (min-width: 900px) {
+	body {
+		background-image: url("../assets/img/pip-boy_screen_small.jpg");
+		background-repeat: no-repeat;
+	}
 }
 
 .content {
@@ -19,6 +32,17 @@ body {
 	color: $editor;
 	&__title {
 		text-align: center;
+		font-size: 12px;
+	}
+	@media screen and (min-width: 600px) {
+		.content__title {
+			font-size: 24px;
+		}
+	}
+	@media screen and (min-width: 900px) {
+		.content__title {
+			font-size: 36px;
+		}
 	}
 }
 
@@ -30,7 +54,7 @@ body {
 	&__notepad {
 		width: 65vw;
 		height: 60vh;
-		max-height: 60vh;
+		max-height: 40vh;
 		max-width: 65vw;
 		display: block;
 		font-family: "Roboto Mono", monospace;
@@ -38,6 +62,18 @@ body {
 		background: transparent;
 		margin-top: 10px;
 		border: none;
+	}
+	@media screen and (min-width: 600px) {
+		.form__notepad {
+			max-height: 60vh;
+			max-width: 50vw;
+		}
+	}
+	@media screen and (min-width: 900px) {
+		.form__notepad {
+			max-height: 60vh;
+			max-width: 65vw;
+		}
 	}
 }
 
@@ -47,22 +83,40 @@ body {
 	align-items: center;
 	color: $editor;
 	line-height: 0.2px;
-	padding-top: 50px;
 	&__title {
 		text-align: center;
-		font-size: 36px;
+		font-size: 12px;
+	}
+	@media screen and (min-width: 600px) {
+		.header__title {
+			font-size: 24px;
+		}
+	}
+	@media screen and (min-width: 900px) {
+		.header__title {
+			font-size: 36px;
+		}
 	}
 	&__paragraph {
 		text-align: center;
-		font-size: 36px;
+		font-size: 12px;
+	}
+	@media screen and (min-width: 600px) {
+		.header__paragraph {
+			font-size: 24px;
+		}
+	}
+	@media screen and (min-width: 900px) {
+		.header__paragraph {
+			font-size: 36px;
+		}
 	}
 }
 
-.menu{
-
+.menu {
 	display: flex;
 	padding: 16px;
-	&__load{
+	&__load {
 		font-family: "Roboto Mono", monospace;
 		color: $editor;
 		margin: 16px;
@@ -71,7 +125,7 @@ body {
 		border-width: 5px;
 		border-color: $editor;
 	}
-	&__save{
+	&__save {
 		font-family: "Roboto Mono", monospace;
 		color: $editor;
 		margin: 16px;
